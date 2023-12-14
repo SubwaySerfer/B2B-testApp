@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oranienbaum&display=swap');
 
 html {
   font-size: 10px;
   font-family: 'Oranienbaum', serif;
+  /* font-family: 'Noto Sans', sans-serif; */
 }
 .btn-root{
   transition: transform ease-in .25s;
@@ -75,4 +76,8 @@ main{
 }
 figure{
   margin: 0;
+}
+
+a{
+  text-decoration: none;
 }

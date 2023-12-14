@@ -47,7 +47,6 @@ export default {
 
 <style>
 html {
-  font-family: 'Poppins', sans-serif;
   font-size: 10px;
   color: #000;
 }

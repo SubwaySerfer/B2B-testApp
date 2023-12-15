@@ -23,7 +23,8 @@
         <p class="order__description">Выбирайте для себя лучшее.
           Отправляйтесь в невероятное мебельное путешествие в Китай с нами!
         </p>
-        <img src="/assets/icons/home/arrow-promo-icon.svg" alt="arrow icon from description to button.">
+        <img class="order__arrow-icon" src="/assets/icons/home/arrow-promo-icon.svg"
+          alt="arrow icon from description to button.">
       </div>
       <div class="info-block__aside-info">
         <p class="aside-info__text">Собственная ТК –
@@ -36,7 +37,7 @@
       </div>
       <figure class="info-block__back-lamp"><img src="/assets/images/home/lamp-image.png" alt="backgroung lamp."></figure>
       <img class="info-block__sofa-img" src="/assets/images/home/sofa-image.png" alt="orange sofa with pillow.">
-    </div>ideeo-i
+    </div>
   </section>
 </template>
 
@@ -46,7 +47,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8.9rem 0;
+  padding: 7.9rem 0;
   background-image: url('/assets/images/home/back-image.png');
   /* TODO: сделать сверху фильтр */
   color: #F0D683;
@@ -60,7 +61,7 @@
   display: flex;
   flex-direction: column;
   max-width: 79.2rem;
-  gap: 3.2rem;
+  gap: 1.8rem;
 }
 
 .main-block__label {
@@ -97,12 +98,20 @@
   padding: .4rem .5rem;
 }
 
+.order__arrow-icon {
+  top: -.2rem;
+  right: -11.2rem;
+  position: absolute;
+}
+
 .info-block__order {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   gap: 1.6rem;
+  grid-area: 1 / 4 / 2 /5;
+  margin-top: 3.8rem;
 }
 
 .order__description {
@@ -118,7 +127,7 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  grid-area: 1 / 4 / 3 / 5;
+  grid-area: 1 / 6 / 3 / 7;
   width: 27.3rem;
   padding: 6.8rem 4.2rem 0 4.3rem;
   height: 37.2rem;
@@ -152,15 +161,20 @@
   width: 100%;
   height: 600px;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 20.4rem min-content 35.8rem min-content 34.8rem 1fr 1fr;
 }
 
 .info-block__sofa-img {
-  grid-area: 2 / 1 / 3 / 5;
+  grid-area: 2 / 1 / 3 / 8;
+  justify-self: center;
+  align-self: end;
+  margin-top: 3rem;
+  margin-right: 2.7rem;
 }
 
 .info-block__back-lamp {
-  grid-area: 1 / 5 / 3 / 6;
+  grid-area: 1 / 5/ 3 / 8;
+  justify-self: end;
 }
 
 .info-block__video-info {
@@ -173,6 +187,9 @@
   align-items: center;
   gap: 2.4rem;
   padding: 2.6rem;
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: start;
+  margin-top: .5rem;
 }
 
 .video-info__icon {
@@ -187,6 +204,7 @@
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 130%;
+  padding-bottom: .7rem;
 
 }
 

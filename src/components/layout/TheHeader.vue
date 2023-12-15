@@ -50,6 +50,7 @@
 .logo-box__text {
   width: 19.9rem;
   text-align: start;
+  padding-bottom: .4rem;
 }
 
 .header__info-block {
@@ -72,6 +73,7 @@
   border-bottom: 1px dashed;
   margin: 0;
   color: #F0D683;
+  padding-bottom: 3px;
 }
 
 .info-block__media {
@@ -80,6 +82,7 @@
   flex-direction: row;
   align-items: center;
   gap: 2rem;
+  padding-bottom: 1.1rem;
 }
 
 .info-block__phone {

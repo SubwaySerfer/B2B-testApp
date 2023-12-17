@@ -57,7 +57,7 @@
             </p>
           </li>
         </ul>
-        <img class="buy-info__img" src="/assets/images/home/sofa-comparison-1.png"
+        <img class="buy-info__img buy-info__img__mr-rght" src="/assets/images/home/sofa-comparison-1.png"
           alt="sofa with magazine table and armchair.">
       </div>
       <div class="main-block__buy-info main-block__buy-info__trips">
@@ -96,7 +96,7 @@
           </li>
         </ul>
         <!-- TODO: собрать интерьер из фотокарточек -->
-        <img class="buy-info__img" src="/assets/images/home/sofa-comparison-2.png"
+        <img class="buy-info__img buy-info__img buy-info__img__mr-left" src="/assets/images/home/sofa-comparison-2.png"
           alt="light sofa with magazine table and armchair.">
       </div>
       <div></div>
@@ -210,11 +210,11 @@
   height: 76.7rem;
   border-radius: 4.1rem;
   background: #3D3D3D;
-  padding: 4.1rem 3.8rem 0 3.4rem;
+  padding: 3.3rem 3.8rem 0 3.4rem;
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3.3rem;
   text-align: start;
   font-family: Noto Sans;
   font-size: 1.6rem;
@@ -244,10 +244,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  text-align: start;
+  width: 44.4rem;
+  padding-left: 3.5rem;
 }
 
 .elem__icon {
   align-self: start;
+  padding-top: .5rem;
 }
 
 .list-info__elem {
@@ -261,5 +265,15 @@
 .buy-info__img {
   width: 87.2rem;
   align-self: center
+}
+
+.buy-info__img__mr-rght {
+  margin-right: 20rem;
+  transform: translateY(-16px);
+}
+
+.buy-info__img__mr-left {
+  margin-left: 23rem;
+  margin-top: 3rem;
 }
 </style>

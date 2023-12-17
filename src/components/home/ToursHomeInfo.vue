@@ -7,7 +7,7 @@
     </h3>
     <div class="home-tours__main-block">
       <ul class="main-block__tours-info">
-        <li class="tours-info__elem">
+        <li class="tours-info__elem padding-top">
           <div class="elem__label-box"><img src="/assets/icons/home/list-icon.svg" alt="dot icon.">
             <h4 class="label-box__title">01</h4><img src="/assets/icons/home/line.svg"
               alt="line icon from label to main picture." class="label-box__line">
@@ -25,7 +25,7 @@
             перед отправкой.
             Предоставляем вам видео и фотоотчёт перед отправкой</p>
         </li>
-        <li class="tours-info__elem">
+        <li class="tours-info__elem transform-y">
           <div class="elem__label-box"><img src="/assets/icons/home/list-icon.svg" alt="dot icon.">
             <h4 class="label-box__title">03</h4><img src="/assets/icons/home/line3.svg"
               alt="line icon from label to main picture." class="label-box__line">
@@ -40,7 +40,7 @@
           </figure>
           <span class="img-box__bg"></span>
         </li>
-        <li class="tours-info__elem tours-info__elem__revert">
+        <li class="tours-info__elem padding-top tours-info__elem__revert">
           <div class="elem__label-box elem__label-box__revert"><img src="/assets/icons/home/list-icon.svg"
               alt="dot icon.">
             <h4 class="label-box__title">04</h4><img src="/assets/icons/home/line4.svg"
@@ -50,16 +50,16 @@
           <p class="elem__description text__revert">Перевозим собственной ТК. Гарантируем, что все будет доставлено без
             повреждений</p>
         </li>
-        <li class="tours-info__elem tours-info__elem__revert">
+        <li class="tours-info__elem tours-info__elem__revert transform-bottom ">
           <div class="elem__label-box elem__label-box__revert"><img src="/assets/icons/home/list-icon.svg"
               alt="dot icon.">
             <h4 class="label-box__title">05</h4><img src="/assets/icons/home/line5.svg"
               alt="line icon from label to main picture." class=" label-box__line__revert">
           </div>
-          <h5 class="elem__title text__revert">Персональный менеджер-переводчик</h5>
+          <h5 class="elem__title text__revert">Персональный <br> менеджер-переводчик</h5>
           <p class="elem__description text__revert">Более 10 лет опыта индивидуального подбора мебели</p>
         </li>
-        <li>
+        <li class="tours-info__btn">
           <button class="btn">забронировать тур</button>
         </li>
       </ul>
@@ -87,6 +87,7 @@
 }
 
 .home-tours__title {
+  margin-right: 3rem;
   color: #F0D683;
   font-family: Oranienbaum;
   font-size: 4rem;
@@ -109,6 +110,7 @@
   line-height: 130%;
   width: 82rem;
   margin-bottom: 2rem;
+  margin-right: 3.3rem;
 }
 
 .home-tours__description__gold {
@@ -168,7 +170,6 @@
 .elem__label-box {
   display: flex;
   flex-direction: row;
-  gap: 1.4rem;
   align-items: center;
   position: relative;
   padding-left: .7rem;
@@ -219,7 +220,7 @@
 .label-box__line {
   position: absolute;
   top: 2.3rem;
-  left: 14rem;
+  left: 12rem;
 }
 
 .elem__label-box__revert {
@@ -237,7 +238,7 @@
 }
 
 .label-box__line__revert {
-  right: 14rem;
+  right: 12rem;
   top: 2.3rem;
   position: absolute;
 }
@@ -247,5 +248,30 @@
   padding-left: 0;
   padding-right: 2.7rem;
 
+}
+
+.padding-top {
+  padding-top: 1.7rem;
+}
+
+.transform-y {
+  transform: translateY(2.3rem);
+}
+
+.transform-bottom {
+  transform: translateY(-3.8rem);
+
+}
+
+.tours-info__btn {
+  margin: 0 0 0.5rem 2.6rem;
+  width: 26.3rem;
+  height: 6.8rem;
+  background: linear-gradient(90deg, #67310A -108.98%, #F0D683 129.77%);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .4rem .5rem;
 }
 </style>

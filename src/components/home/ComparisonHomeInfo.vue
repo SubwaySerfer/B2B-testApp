@@ -99,7 +99,17 @@
         <img class="buy-info__img buy-info__img buy-info__img__mr-left" src="/assets/images/home/sofa-comparison-2.png"
           alt="light sofa with magazine table and armchair.">
       </div>
-      <div></div>
+      <div class="main-block__media-block">
+        <figure class="media-block__background">
+          <p class="media-block__description">Нужна помощь специалиста?
+            Задайте свой вопрос</p>
+          <div class="media-block__links">
+            <img src="/assets/icons/header/tg-icon.svg" class="media-block__links__icons" alt="our telegram button.">
+            <img src="/assets/icons/header/vk-icon.svg" class="media-block__links__icons" alt="out vk button.">
+          </div>
+        </figure>
+
+      </div>
     </div>
   </section>
 </template>
@@ -201,8 +211,11 @@
 .home-comparison__main-block {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 12.4rem;
-  padding-left: 12.5rem;
+  row-gap: 0;
+  /* padding-left: 12.5rem; */
 }
 
 .main-block__buy-info {
@@ -268,12 +281,53 @@
 }
 
 .buy-info__img__mr-rght {
-  margin-right: 20rem;
-  transform: translateY(-16px);
+  margin-right: 21rem;
+  transform: translateY(.5rem);
 }
 
 .buy-info__img__mr-left {
   margin-left: 23rem;
-  margin-top: 3rem;
+  margin-top: 2.1rem;
+}
+
+.main-block__media-block {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 100%;
+  z-index: 2;
+  transform: translateY(-0.5rem);
+}
+
+.media-block__background {
+  background: #FFF;
+  height: 9.8rem;
+  width: 41.3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2.9rem 3.4rem;
+  border-radius: 20rem;
+  gap: 2.3rem;
+}
+
+.media-block__description {
+  color: #333;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  width: 22.3rem;
+  text-align: start;
+}
+
+.media-block__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.media-block__links__icons {
+  cursor: pointer;
 }
 </style>

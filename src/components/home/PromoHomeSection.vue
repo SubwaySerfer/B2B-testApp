@@ -123,6 +123,7 @@
 }
 
 .info-block__aside-info {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   gap: 2rem;

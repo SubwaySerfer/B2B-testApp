@@ -44,7 +44,7 @@
           <div class="elem__label-box elem__label-box__revert"><img src="/assets/icons/home/list-icon.svg"
               alt="dot icon.">
             <h4 class="label-box__title">04</h4><img src="/assets/icons/home/line4.svg"
-              alt="line icon from label to main picture." class=" label-box__line__revert">
+              alt="line icon from label to main picture." class="label-box__line__revert">
           </div>
           <h5 class="elem__title text__revert">Транспортировка</h5>
           <p class="elem__description text__revert">Перевозим собственной ТК. Гарантируем, что все будет доставлено без
@@ -54,7 +54,7 @@
           <div class="elem__label-box elem__label-box__revert"><img src="/assets/icons/home/list-icon.svg"
               alt="dot icon.">
             <h4 class="label-box__title">05</h4><img src="/assets/icons/home/line5.svg"
-              alt="line icon from label to main picture." class=" label-box__line__revert">
+              alt="line icon from label to main picture." class="label-box__line__revert">
           </div>
           <h5 class="elem__title text__revert">Персональный <br> менеджер-переводчик</h5>
           <p class="elem__description text__revert">Более 10 лет опыта индивидуального подбора мебели</p>
@@ -151,7 +151,6 @@
   flex-wrap: wrap;
   list-style-type: none;
   align-items: center;
-  row-gap: 6.4rem;
   justify-content: space-between;
   height: 100%;
 }
@@ -225,8 +224,6 @@
 
 .elem__label-box__revert {
   flex-direction: row-reverse;
-  /* justify-content: start;
-  align-self: start */
   align-self: flex-end;
   padding-left: 0;
   padding-right: 1rem;
@@ -273,5 +270,52 @@
   align-items: center;
   justify-content: center;
   padding: .4rem .5rem;
+}
+
+@media(max-width: 1600px) {
+  .elem__img-box {
+    width: 34.73vw;
+    height: 66.3rem;
+  }
+
+  .label-box__line__revert,
+  .label-box__line {
+    width: 20vw;
+  }
+}
+
+@media(max-width: 1450px) {
+  .elem__img-box {
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
+}
+
+@media(max-width: 1230px) {
+  .home-tours {
+    height: 190rem;
+    padding-bottom: 5rem;
+  }
+
+  .main-block__tours-info {
+    flex-wrap: nowrap;
+    row-gap: 3rem;
+    width: 100vw;
+  }
+
+  .tours-info__btn {
+    align-self: center;
+    margin: 0;
+  }
+
+  .tours-info__elem {
+    margin-right: 6vw;
+  }
+
+  .tours-info__elem__revert {
+    margin-left: 6vw;
+  }
+
+
 }
 </style>

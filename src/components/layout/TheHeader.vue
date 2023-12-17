@@ -106,4 +106,26 @@
 .phone__pick-call {
   border-bottom: 1px dashed;
 }
+
+@media(max-width: 1919px) {
+  .header {
+    padding: 0 10vw;
+  }
+}
+
+@media(max-width: 1350px) {
+  .header {
+    padding: 0 3vw;
+  }
+
+  .header__info-block {
+    gap: 3vw;
+  }
+}
+
+@media(max-width:1062px) {
+  .logo-box__text {
+    display: none;
+  }
+}
 </style>

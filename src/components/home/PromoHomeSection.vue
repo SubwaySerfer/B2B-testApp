@@ -35,7 +35,8 @@
         </p>
 
       </div>
-      <figure class="info-block__back-lamp"><img src="/assets/images/home/lamp-image.png" alt="backgroung lamp."></figure>
+      <figure class="info-block__back-lamp"><img src="/assets/images/home/lamp-image.png" alt="backgroung lamp."
+          class="back-lamp__img"></figure>
       <img class="info-block__sofa-img" src="/assets/images/home/sofa-image.png" alt="orange sofa with pillow.">
     </div>
   </section>
@@ -212,5 +213,20 @@
 
 .video-info__description__small {
   font-weight: 400;
+}
+
+@media(max-width: 1919px) {
+  .info-block__sofa-img {
+    width: 67vw;
+  }
+
+  .back-lamp__img {
+    width: 25vw;
+  }
+
+  .home-promo__info-block {
+    grid-template-columns: 1fr min-content 1fr min-content 1fr 1fr 1fr;
+
+  }
 }
 </style>

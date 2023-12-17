@@ -96,7 +96,7 @@
           </li>
         </ul>
         <!-- TODO: собрать интерьер из фотокарточек -->
-        <img class="buy-info__img buy-info__img buy-info__img__mr-left" src="/assets/images/home/sofa-comparison-2.png"
+        <img class=" buy-info__img buy-info__img__mr-left" src="/assets/images/home/sofa-comparison-2.png"
           alt="light sofa with magazine table and armchair.">
       </div>
       <div class="main-block__media-block">
@@ -117,7 +117,8 @@
 <style scoped>
 .home-comparison {
   height: 1332px;
-  background: linear-gradient(180deg, #010E0F 79.28%, rgba(1, 14, 15, 0.00) 100%);
+  /* background: linear-gradient(180deg, #010E0F 79.28%, rgba(1, 14, 15, 0.00) 100%); */
+  background: #1C1C1C;
   color: #FFF;
   font-family: Noto Sans;
   font-size: 2.4rem;
@@ -330,4 +331,57 @@
 .media-block__links__icons {
   cursor: pointer;
 }
-</style>
+
+@media(max-width: 1919px) {
+  .buy-info__img {
+    width: 40vw;
+  }
+
+  .buy-info__img__mr-left {
+    margin-left: 5vw;
+    margin-top: 2.1rem;
+  }
+}
+
+@media(max-width: 1600px) {
+  .home-comparidon__info-block {
+    width: auto;
+    margin: 0 1rem;
+  }
+
+  .info-block__content-adventures {
+    align-items: center;
+    gap: 3wv;
+    padding: 1vw;
+  }
+
+  .home-comparison__main-block {
+    row-gap: 5vh;
+    column-gap: 8vw
+  }
+}
+
+@media(max-width: 1450px) {
+  .buy-info__img__mr-rght {
+    margin-right: 4vw;
+  }
+
+  .buy-info__img__mr-left {
+    margin-left: 0;
+    margin-top: 2.1rem;
+  }
+
+  .home-comparison__main-block {
+    column-gap: 2vw;
+  }
+}
+
+@media(max-width:1180px) {
+  .home-comparison__main-block {
+    flex-direction: column;
+  }
+
+  .home-comparison {
+    height: auto;
+  }
+}</style>

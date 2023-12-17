@@ -171,6 +171,7 @@
   align-self: end;
   margin-top: 3rem;
   margin-right: 2.7rem;
+  z-index: 10;
 }
 
 .info-block__back-lamp {

@@ -9,16 +9,16 @@
       <ul class="main-block__tours-info">
         <li class="tours-info__elem">
           <div class="elem__label-box"><img src="/assets/icons/home/list-icon.svg" alt="dot icon.">
-            <h4 class="label-box__title">01</h4><img src="/public/assets/icons/home/line.svg"
-              alt="line icon from label to main picture.">
+            <h4 class="label-box__title">01</h4><img src="/assets/icons/home/line.svg"
+              alt="line icon from label to main picture." class="label-box__line">
           </div>
           <h5 class="elem__title">Организация поездки</h5>
           <p class="elem__description">От оформления визы до бронирования гостиницы</p>
         </li>
         <li class="tours-info__elem">
           <div class="elem__label-box"><img src="/assets/icons/home/list-icon.svg" alt="dot icon.">
-            <h4 class="label-box__title">02</h4><img src="/public/assets/icons/home/line.svg"
-              alt="line icon from label to main picture.">
+            <h4 class="label-box__title">02</h4><img src="/assets/icons/home/line2.svg"
+              alt="line icon from label to main picture." class="label-box__line">
           </div>
           <h5 class="elem__title">Контроль качества</h5>
           <p class="elem__description">Не просто оформляем, а выполняем тщательную проверку: на складе производителя и
@@ -27,34 +27,40 @@
         </li>
         <li class="tours-info__elem">
           <div class="elem__label-box"><img src="/assets/icons/home/list-icon.svg" alt="dot icon.">
-            <h4 class="label-box__title">03</h4><img src="/public/assets/icons/home/line.svg"
-              alt="line icon from label to main picture.">
+            <h4 class="label-box__title">03</h4><img src="/assets/icons/home/line3.svg"
+              alt="line icon from label to main picture." class="label-box__line">
           </div>
           <h5 class="elem__title">Оформление документов</h5>
           <p class="elem__description">Готовим все сопроводительные бумаги, выполняем растаможивание и доставляем товары
             прямо до вашей двери</p>
         </li>
-        <li>
-          <figure class=""><img src="" alt=""></figure>
+        <li class="elem__img-box">
+          <figure class="img-box__figure">
+            <img src="/assets/images/home/tours-image.png" alt="Woman with champagne sits in a future armchair.">
+          </figure>
+          <span class="img-box__bg"></span>
         </li>
-        <li class="tours-info__elem">
-          <div class="elem__label-box"><img src="/assets/icons/home/list-icon.svg" alt="dot icon.">
-            <h4 class="label-box__title">04</h4><img src="/public/assets/icons/home/line.svg"
-              alt="line icon from label to main picture.">
+        <li class="tours-info__elem tours-info__elem__revert">
+          <div class="elem__label-box elem__label-box__revert"><img src="/assets/icons/home/list-icon.svg"
+              alt="dot icon.">
+            <h4 class="label-box__title">04</h4><img src="/assets/icons/home/line4.svg"
+              alt="line icon from label to main picture." class=" label-box__line__revert">
           </div>
-          <h5 class="elem__title">Транспортировка</h5>
-          <p class="elem__description">Перевозим собственной ТК. Гарантируем, что все будет доставлено без повреждений</p>
+          <h5 class="elem__title text__revert">Транспортировка</h5>
+          <p class="elem__description text__revert">Перевозим собственной ТК. Гарантируем, что все будет доставлено без
+            повреждений</p>
         </li>
-        <li class="tours-info__elem">
-          <div class="elem__label-box"><img src="/assets/icons/home/list-icon.svg" alt="dot icon.">
-            <h4 class="label-box__title">05</h4><img src="/public/assets/icons/home/line.svg"
-              alt="line icon from label to main picture.">
+        <li class="tours-info__elem tours-info__elem__revert">
+          <div class="elem__label-box elem__label-box__revert"><img src="/assets/icons/home/list-icon.svg"
+              alt="dot icon.">
+            <h4 class="label-box__title">05</h4><img src="/assets/icons/home/line5.svg"
+              alt="line icon from label to main picture." class=" label-box__line__revert">
           </div>
-          <h5 class="elem__title">Персональный менеджер-переводчик</h5>
-          <p class="elem__description">Более 10 лет опыта индивидуального подбора мебели</p>
+          <h5 class="elem__title text__revert">Персональный менеджер-переводчик</h5>
+          <p class="elem__description text__revert">Более 10 лет опыта индивидуального подбора мебели</p>
         </li>
         <li>
-          <button></button>
+          <button class="btn">забронировать тур</button>
         </li>
       </ul>
     </div>
@@ -126,6 +132,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+  padding-left: 2.7rem;
 }
 
 .elem__description {
@@ -133,6 +140,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  padding-left: 2.7rem;
 }
 
 .main-block__tours-info {
@@ -141,8 +149,8 @@
   flex-wrap: wrap;
   list-style-type: none;
   align-items: center;
-  gap: 6.4rem;
-  justify-content: center;
+  row-gap: 6.4rem;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -152,13 +160,18 @@
   align-items: start;
   width: 34.5rem;
   text-align: start;
+  gap: 1rem;
 }
+
+
 
 .elem__label-box {
   display: flex;
   flex-direction: row;
   gap: 1.4rem;
   align-items: center;
+  position: relative;
+  padding-left: .7rem;
 }
 
 .home-tours__main-block {
@@ -167,5 +180,72 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.elem__img-box {
+  flex: 0 1 100%;
+  width: 66.3rem;
+  height: 66.3rem;
+  border-radius: 66.3rem;
+  margin-right: 10.3rem;
+  margin-left: 10.3rem;
+  /* background: radial-gradient(50% 50% at 50% 50%, #17858C 0%, rgba(4, 59, 63, 0.00) 100%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box__figure {
+  width: 48.1rem;
+  height: 48.1rem;
+  border-radius: 48.1rem;
+  border: 1px solid #F0D683;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.img-box__bg {
+  filter: blur(50px);
+  background: radial-gradient(50% 50% at 50% 50%, #17858C 0%, rgba(4, 59, 63, 0.00) 100%);
+  width: 66.3rem;
+  height: 66.3rem;
+  border-radius: 66.3rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.label-box__line {
+  position: absolute;
+  top: 2.3rem;
+  left: 14rem;
+}
+
+.elem__label-box__revert {
+  flex-direction: row-reverse;
+  /* justify-content: start;
+  align-self: start */
+  align-self: flex-end;
+  padding-left: 0;
+  padding-right: 1rem;
+
+}
+
+.tours-info__elem__revert {
+  align-items: end
+}
+
+.label-box__line__revert {
+  right: 14rem;
+  top: 2.3rem;
+  position: absolute;
+}
+
+.text__revert {
+  text-align: end;
+  padding-left: 0;
+  padding-right: 2.7rem;
+
 }
 </style>

@@ -1,7 +1,46 @@
-# Vue 3 + Vite
+# Проект: "Россэкспресс_тест for 'B2B-creative'"
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+---
 
-## Recommended IDE Setup
+## Описание:
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Тестовое задание:
+"Сверстать 3 секции одного из проектов на выбор: РосЭкспресс или Студия кухни Марко. Работать следуя концепции Pixel Perfect
+Сделать адаптив на своё усмотрение с проверкой по брейкпоинтам
+Сделать анимацию на своё усмотрение, можно используя WOW
+Провести оптимизацию и проверку сайта на ошибки, на оптимизацию через pagespeed и соответствие дизайну"
+
+[Ссылка на деплой](https://relaxed-pixie-1f9502.netlify.app)
+
+[Ссылка на макет](https://www.figma.com/file/QKi5HuQ8ebrB0dPqmXd9c7/Россэкспресс_тест?type=design&node-id=0-1&mode=design&t=sqA53xKa0MQhfCcZ-0)
+
+---
+
+#### Стэк технологий:
+
+Vue3, CSS, Vite, Vue-router, JS
+
+---
+
+## Установка
+
+- `npm install` — установить зависимости
+- `npm run dev` — запуск сервера разработки
+- `npm run build` — сборка проекта
+
+---
+
+## Пример кода:
+
+```
+<div class="main-block__media-block">
+  <figure class="media-block__background">
+    <p class="media-block__description">Нужна помощь специалиста?
+      Задайте свой вопрос</p>
+    <div class="media-block__links">
+      <img src="/assets/icons/header/tg-icon.svg" class="media-block__links__icons" alt="our telegram button.">
+      <img src="/assets/icons/header/vk-icon.svg" class="media-block__links__icons" alt="out vk button.">
+    </div>
+  </figure>
+</div>
+```

@@ -36,7 +36,8 @@
         </li>
         <li class="elem__img-box">
           <figure class="img-box__figure">
-            <img src="/assets/images/home/tours-image.png" alt="Woman with champagne sits in a future armchair.">
+            <img class="img-box__image" src="/assets/images/home/tours-image.png"
+              alt="Woman with champagne sits in a future armchair.">
           </figure>
           <span class="img-box__bg"></span>
         </li>
@@ -315,7 +316,29 @@
   .tours-info__elem__revert {
     margin-left: 6vw;
   }
+}
 
+@media(max-width: 767px) {
 
+  .home-tours__title,
+  .home-tours__description {
+    width: auto;
+    margin: 0 1rem;
+    text-align: center;
+  }
+
+  .img-box__bg {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .img-box__figure {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .img-box__image {
+    width: 90vw;
+  }
 }
 </style>

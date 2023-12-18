@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header__logo-box">
-      <img src="/assets/icons/header/logo.svg" alt="company logo.">
+      <img src="/assets/icons/header/logo.svg" alt="company logo." class="logo-box__image">
       <p class="logo-box__text">Индивидуальные мебельные туры в Китай для частных клиентов и бизнеса</p>
     </div>
     <div class="header__info-block">
@@ -126,6 +126,25 @@
 @media(max-width:1062px) {
   .logo-box__text {
     display: none;
+  }
+}
+
+@media(max-width: 800px) {
+
+  .info-block__email {
+    display: none;
+  }
+}
+
+@media(max-width:600px) {
+  .info-block__media {
+    display: none;
+  }
+}
+
+@media(max-width: 390px) {
+  .logo-box__image {
+    width: 45vw;
   }
 }
 </style>

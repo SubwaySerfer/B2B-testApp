@@ -384,4 +384,62 @@
   .home-comparison {
     height: auto;
   }
-}</style>
+}
+
+@media(max-width: 1000px) {
+  .home-comparison {
+    padding-top: 4rem;
+  }
+
+  .home-comparison__label {
+    width: auto;
+    height: auto;
+    padding: 0 2vw;
+  }
+
+  .home-comparidon__info-block {
+    height: auto;
+    position: static;
+  }
+
+  .info-block__content-adventures {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+}
+
+@media(max-width: 767px) {
+  .main-block__buy-info {
+    width: auto;
+    margin: 0 1rem;
+    padding: 2rem 2rem 0;
+  }
+
+  .buy-info__label {
+    width: auto;
+    text-align: center;
+  }
+
+  .buy-info__img {
+    width: 80vw;
+  }
+}
+
+@media(max-width: 500px) {
+  .media-block__background {
+    width: 90vw;
+  }
+
+  .main-block__buy-info {
+    height: auto;
+  }
+
+  .home-comparison__label {
+    font-size: 3.5rem;
+  }
+}
+</style>

@@ -229,4 +229,63 @@
 
   }
 }
+
+@media(max-width: 1000px) {
+  .home-promo__info-block {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 3rem;
+  }
+
+  .info-block__sofa-img {
+    grid-area: 4 / 1 / 5 / 3;
+    justify-self: center;
+    margin: 0;
+    width: 80vw;
+  }
+
+  .info-block__back-lamp {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .home-promo {
+    height: auto;
+  }
+
+  .info-block__video-info {
+    grid-area: 1 / 1 / 2 / 3;
+    justify-self: center;
+  }
+
+  .info-block__order {
+    grid-area: 2 / 1 / 3 / 3;
+    justify-self: center;
+    margin-top: 0;
+  }
+
+  .info-block__aside-info {
+    grid-area: 3 / 1 / 4 / 3;
+    justify-self: center;
+    padding: 3rem 2rem 3rem 2rem;
+    height: max-content;
+  }
+}
+
+@media(max-width: 600px) {
+  .main-block__info {
+    margin: 0 1rem 2rem;
+    font-size: 2.5rem;
+  }
+
+  .main-block__label {
+    font-size: 3.8rem;
+    margin: 0 1rem;
+  }
+
+  .order__arrow-icon {
+    display: none;
+  }
+}
 </style>
